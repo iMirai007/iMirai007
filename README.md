@@ -1,4 +1,4 @@
-## Hey there 👋, I'm [Pavan!](https://github.com/iMirai007/)
+## Hey there 👋, I'm [iMirai007!](https://github.com/iMirai007/)
 
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/iMirai007)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/iMirai007)
