@@ -1,19 +1,20 @@
-## Hey there 👋, I'm [Albert Cortel](https://github.com/iMirai007/) - Mobile Enterprise Solutions Architect
+## Hey there 👋, I'm [Albert Cortel](https://github.com/iMirai007/) - Senior .NET Enterprise Developer
 
 [![Portfolio](https://img.shields.io/badge/-Portfolio-1F4E79?style=flat-square&logo=Safari&logoColor=white)](https://portfolio.imiraihub.com/)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/iMirai007)
 [![App Store](https://img.shields.io/badge/-App_Store-000000?style=flat-square&logo=Apple&logoColor=white)](https://apps.apple.com/app/timeexacto/id6738023550)
 [![Google Play](https://img.shields.io/badge/-Google_Play-34A853?style=flat-square&logo=Google-Play&logoColor=white)](https://play.google.com/store/apps/details?id=com.jjglobal.timehub)
 
-### 🚀 Building Enterprise Mobile Solutions That Scale &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=iMirai007.iMirai007&style=flat-square&color=1F4E79)
+### 🚀 Building Enterprise Solutions with .NET & C# &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=iMirai007.iMirai007&style=flat-square&color=1F4E79)
 
-I'm a **Mobile Enterprise Solutions Architect** with 5+ years of experience building complete HRIS ecosystems from backend APIs to published mobile applications. Currently architecting enterprise platforms at **JJ Global Services** in Guam.
+I'm a **Senior .NET Developer** with 5+ years of experience building enterprise HRIS platforms and desktop applications. Currently architecting scalable backend systems at **JJ Global Services** in Guam using **C#**, **ASP.NET MVC**, and **WinForms**.
 
 🎯 **What I Do:**
-- 📱 Build cross-platform mobile apps with **FlutterFlow** published to iOS & Android app stores
-- 🏗️ Architect scalable backend systems using **C#** and **ASP.NET Core**
-- 🔧 Deploy production infrastructure on **Linux** with **NGINX** and **Redis**
-- 🏢 Create enterprise HRIS solutions serving **40K+ users** with biometric authentication, payroll integration, and multi-location support
+- 🏗️ Build robust backend systems with **ASP.NET MVC** and **ASP.NET Core**
+- 🖥️ Develop desktop applications using **WinForms** and **.NET Framework**
+- 🗄️ Design database solutions with **MSSQL** and **Redis** for enterprise scale
+- 🐧 Deploy and manage **Linux** infrastructure with **NGINX** reverse proxies
+- 📱 **Bonus:** Also build mobile apps with **FlutterFlow** (recently published to app stores)
 
 <img align="right" height="250" width="375" alt="Coding" src="https://raw.githubusercontent.com/iMirai007/iMirai007/master/gifs/coder.gif" />
 
@@ -31,10 +32,11 @@ I'm a **Mobile Enterprise Solutions Architect** with 5+ years of experience buil
 - **99.9% uptime** serving 500+ employees across multiple locations
 
 ### 💼 Current Focus:
-- 🛠 &nbsp; Building enterprise mobile solutions with **FlutterFlow**, **C#**, **ASP.NET Core**
+- 🛠 &nbsp; Building enterprise backends with **ASP.NET MVC**, **C#**, and **MSSQL** databases
+- 🖥️ &nbsp; Developing desktop applications with **WinForms** and **.NET Framework**
+- 🐧 &nbsp; Managing **Linux** production servers with **NGINX** and **Redis** caching
+- 📱 &nbsp; **Side projects:** Expanding into mobile development with **FlutterFlow**
 - 🚀 &nbsp; Exploring **AI integration** in HRIS systems and **cloud scaling** strategies
-- 📱 &nbsp; Publishing more mobile apps to app stores with advanced enterprise features
-- 🏗️ &nbsp; Architecting **multi-tenant SaaS** platforms with biometric security
 
 ### 📈 GitHub Activity:
 Since joining GitHub **5** years ago:
@@ -46,12 +48,7 @@ Since joining GitHub **5** years ago:
 
 ### 🛠️ Tech Stack & Expertise:
 
-**Mobile Development:**
-<code><img height="30" src="https://avatars.githubusercontent.com/u/14101776?s=200&v=4" alt="flutter"></code>
-<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Apple-app-store-badge.svg/512px-Apple-app-store-badge.svg.png" alt="app-store"></code>
-<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="google-play"></code>
-
-**Backend & Architecture:**
+**.NET & Backend Development:**
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png" alt="csharp"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dotnet/dotnet.png" alt="dotnet"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aspnet/aspnet.png" alt="aspnet"></code>
@@ -64,7 +61,8 @@ Since joining GitHub **5** years ago:
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="docker"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" alt="git"></code>
 
-**Additional Languages:**
+**Additional Skills:**
+<code><img height="30" src="https://avatars.githubusercontent.com/u/14101776?s=200&v=4" alt="flutter"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="javascript"></code>
 
@@ -110,8 +108,9 @@ Since joining GitHub **5** years ago:
 
 ### 💬 Let's Connect!
 
-- 💼 **Looking for:** Senior Mobile Architect or Full-Stack Enterprise roles
-- 🎯 **Specializing in:** FlutterFlow mobile apps + ASP.NET Core backends + scalable infrastructure
+- 💼 **Looking for:** Senior .NET Developer or Full-Stack Enterprise roles
+- 🎯 **Specializing in:** ASP.NET MVC + WinForms + Enterprise HRIS + Linux Infrastructure
+- 📱 **Bonus Skills:** FlutterFlow mobile development with published apps
 - 📧 **Email:** imiraidev007@gmail.com
 - 🌐 **Portfolio:** [portfolio.imiraihub.com](https://portfolio.imiraihub.com/)
 - 📱 **Published Apps:** [iOS](https://apps.apple.com/app/timeexacto/id6738023550) | [Android](https://play.google.com/store/apps/details?id=com.jjglobal.timehub)
