@@ -21,7 +21,7 @@ Self-taught full-stack engineer with 5+ years of hands-on experience across the 
 
 My work spans **ASP.NET Core** REST APIs with **Clean Architecture**, **Angular** frontends, **WPF** desktop applications, **SQL Server** databases, and **Linux** server infrastructure — all the way down to hardware-level protocol work and reverse engineering. I don't treat systems as black boxes; I understand them at the lowest implementation level.
 
-Currently building **iMiraiHub**, a multi-tenant HRIS/Payroll SaaS platform for the Philippine market, while also shipping enterprise workforce solutions at **JJ Global Services**.
+Currently a Full-Stack Engineer at **AXA Philippines** — one of the country's largest insurers serving 1.5M+ customers — building and maintaining enterprise-grade digital platforms. On the side, I'm building **iMiraiHub**, a multi-tenant HRIS/Payroll SaaS for the Philippine market.
 
 ---
 
@@ -55,7 +55,7 @@ Currently building **iMiraiHub**, a multi-tenant HRIS/Payroll SaaS platform for 
 
 ---
 
-### Live Products
+### Shipped Products
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Currently building **iMiraiHub**, a multi-tenant HRIS/Payroll SaaS platform for 
 
 [Website](https://timeexacto.com/) · [iOS](https://apps.apple.com/app/timeexacto/id6738023550) · [Android](https://play.google.com/store/apps/details?id=com.jjglobal.timehub)
 
-Mobile-first workforce management — FlutterFlow + ASP.NET Core backend. Live GPS tracking, biometric auth, smart scheduling, payroll integration, multi-location support.
+Mobile-first workforce management built at JJ Global Services. FlutterFlow + ASP.NET Core backend. Live GPS tracking, biometric auth, smart scheduling, payroll integration, multi-location support.
 
 </td>
 <td width="50%">
@@ -74,7 +74,7 @@ Mobile-first workforce management — FlutterFlow + ASP.NET Core backend. Live G
 
 [Website](https://jjglobaltimehub.com/)
 
-Full-stack web platform — Blazor WASM frontend, C# backend. Real-time analytics, automated reporting, compliance management. **99.9% uptime**, 500+ active employees.
+Full-stack web platform built at JJ Global Services. Blazor WASM frontend, C# backend. Real-time analytics, automated reporting, compliance management. **99.9% uptime**, 500+ active employees.
 
 </td>
 </tr>
