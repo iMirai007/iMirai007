@@ -17,7 +17,7 @@ Building enterprise web, desktop, and mobile applications with C#, ASP.NET Core,
 
 ### About
 
-Full-stack .NET engineer with **5+ years of experience** delivering business applications across the software lifecycle, from requirements and architecture through implementation, deployment, and ongoing maintenance.
+Full-stack .NET engineer with **6 years of experience** delivering business applications across the software lifecycle, from requirements and architecture through implementation, deployment, and ongoing maintenance.
 
 Currently a **Full-Stack Engineer at AXA Philippines**, building and maintaining enterprise digital platforms. My work brings together backend services, web and desktop interfaces, databases, reporting, and production infrastructure.
 
