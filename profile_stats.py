@@ -1,4 +1,4 @@
-"""Read both owners' GitHub aggregates and publish only the approved summary."""
+"""Read configured GitHub aggregates and publish only the approved summary."""
 
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ from profile_stats_models import AccountStats, CombinedStats
 from profile_stats_svg import render_markdown, render_placeholder, render_svg
 
 ACCOUNTS: tuple[tuple[str, str], ...] = (
-    ("iMirai007", "PROFILE_TOKEN_IMIRAI"),
-    ("Artimatrix007", "PROFILE_TOKEN_ARTIMATRIX"),
+    ("primaryOwner", "PROFILE_TOKEN_PRIMARY"),
+    ("archiveOwner", "PROFILE_TOKEN_ARCHIVE"),
 )
 START_MARKER: str = "<!-- combined-profile-stats:start -->"
 END_MARKER: str = "<!-- combined-profile-stats:end -->"
@@ -55,7 +55,7 @@ def graphql(token: str, query: str, variables: dict[str, Any]) -> dict[str, Any]
         "https://api.github.com/graphql",
         data=json.dumps({"query": query, "variables": variables}).encode("utf-8"),
         headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                 "User-Agent": "iMirai007-profile-stats"},
+                 "User-Agent": "profile-analytics"},
         method="POST",
     )
     try:
@@ -73,7 +73,7 @@ def graphql(token: str, query: str, variables: dict[str, Any]) -> dict[str, Any]
 
 def require_owner(viewer: dict[str, Any], login: str) -> None:
     if str(viewer.get("login", "")).casefold() != login.casefold():
-        raise RuntimeError(f"The credential for {login} belongs to a different account.")
+        raise RuntimeError("A profile credential belongs to a different account than configured.")
 
 
 def fetch_account(login: str, token: str, start: date, end: date) -> AccountStats:
@@ -165,15 +165,22 @@ def main() -> None:
     if arguments.placeholder:
         image_path.write_text(render_placeholder(), encoding="utf-8")
         return
-    for login, secret_name in ACCOUNTS:
-        if not os.environ.get(secret_name, "").strip():
-            raise RuntimeError(f"Missing {secret_name} for {login}. Add the Actions secret; do not paste it in chat.")
+    configuration: dict[str, Any] = json.loads(os.environ.get("PROFILE_ANALYTICS_CONFIG", "{}"))
+    if not isinstance(configuration, dict):
+        raise RuntimeError("Invalid profile analytics configuration. Check Actions secrets.")
+    for owner_name, secret_name in ACCOUNTS:
+        owner: Any = configuration.get(owner_name)
+        if not isinstance(owner, str) or not owner.strip() or not os.environ.get(secret_name, "").strip():
+            raise RuntimeError("Missing profile analytics configuration. Check Actions secrets.")
     updated: datetime = datetime.now(UTC)
     end: date = updated.date() - timedelta(days=1)  # 365 completed UTC days, without partial-today totals.
     start: date = end - timedelta(days=364)
     accounts: tuple[AccountStats, ...] = tuple(
-        fetch_account(login, os.environ[secret_name].strip(), start, end) for login, secret_name in ACCOUNTS
+        fetch_account(configuration[owner_name].strip(), os.environ[secret_name].strip(), start, end)
+        for owner_name, secret_name in ACCOUNTS
     )
+    if len({account.login.casefold() for account in accounts}) != len(accounts):
+        raise RuntimeError("Profile analytics requires distinct configured sources.")
     stats: CombinedStats = CombinedStats(accounts, start, end, updated)
     readme_path: Path = ROOT / "README.md"
     readme: str = replace_stats(readme_path.read_text(encoding="utf-8"), render_markdown(stats))
@@ -181,7 +188,7 @@ def main() -> None:
     # All collection and validation finish before any output is changed. The workflow commits both files together.
     image_path.write_text(image, encoding="utf-8")
     readme_path.write_text(readme, encoding="utf-8")
-    print("Updated aggregate profile statistics for both accounts. No repository names or API bodies were published.")
+    print("Updated profile analytics. No repository names or API bodies were published.")
 
 
 if __name__ == "__main__":
