@@ -6,7 +6,7 @@
 
 Architecting enterprise platforms end-to-end — from Angular SPAs and WPF desktop clients<br/>to ASP.NET Core APIs, SQL Server, and self-managed Linux infrastructure.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-1F4E79?style=for-the-badge&logo=safari&logoColor=white)](https://portfolio.imiraihub.com/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1F4E79?style=for-the-badge&logo=safari&logoColor=white)](https://albertcortel.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iMirai007)
 [![App Store](https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/timeexacto/id6738023550)
 [![Google Play](https://img.shields.io/badge/Google_Play-34A853?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.jjglobal.timehub)
@@ -129,33 +129,33 @@ Beyond full-stack development, I reverse engineer hardware protocols and build t
 
 ---
 
-### Impact
+<!-- combined-profile-stats:start -->
+### GitHub Analytics
 
-<div align="center">
+[![Combined GitHub analytics: first refresh pending](assets/combined-stats.svg)](PROFILE_STATS.md)
 
-| 🏢 40,000+ Users | 📲 42,762+ Installs | ⚡ 8h → 2h Payroll |
-|:---:|:---:|:---:|
-| Enterprise HRIS at scale | Mobile device management tools | Processing time via automation |
+Contribution history across **[iMirai007](https://github.com/iMirai007)** and **[Artimatrix007](https://github.com/Artimatrix007)**, including private activity. Lifetime contributions, owned/private repository counts, and a combined contribution calendar refresh from GitHub. Repository names and source code remain private.
 
-| 🔒 A+ SSL Labs | 📱 2 Published Apps | 🟢 99.9% Uptime |
-|:---:|:---:|:---:|
-| All production deployments | iOS App Store + Google Play | Multi-location enterprise |
-
-</div>
+The first authenticated refresh is pending. [View metric definitions and setup](PROFILE_STATS.md).
+<!-- combined-profile-stats:end -->
 
 ---
 
 <details>
-<summary><b>🖥️ Dev Environment</b></summary>
+<summary><b>Development Environment</b></summary>
 <br/>
 
 | Category | Tools |
 |---|---|
-| **IDEs** | Visual Studio 2022, VS Code, Android Studio, FlutterFlow Studio |
-| **Database** | SQL Server Management Studio, CloudBeaver, Redis CLI |
-| **Infrastructure** | Ubuntu Terminal, NGINX, Coolify, Docker |
-| **Testing & Debug** | Postman, dnSpy, HTTP Debugger |
-| **UI Frameworks** | WPF Fluent UI, DevExpress, Bootstrap |
+| **Workspace** | Visual Studio 2026, Git, GitHub |
+| **Application stack** | C#, ASP.NET Core / MVC, Blazor WebAssembly, .NET MAUI, Angular, Windows Forms |
+| **Web tooling** | JavaScript, Node.js, npm, Yarn, Sass, Bootstrap 5.3 |
+| **Data** | Microsoft SQL Server, Redis, Entity Framework Core |
+| **Infrastructure & delivery** | Ubuntu Server, NGINX, Coolify, Azure, AWS, Red Hat OpenShift, CI/CD |
+| **Debugging & analysis** | dnSpy, HTTP Debugger, legacy system analysis, performance tuning |
+| **Reporting** | DevExpress Reports, EPPlus |
+
+Stack and tooling listed on [albertcortel.com](https://albertcortel.com/).
 
 </details>
 
@@ -163,6 +163,6 @@ Beyond full-stack development, I reverse engineer hardware protocols and build t
 
 <div align="center">
 
-📧 **imiraidev007@gmail.com** · 🌐 [**portfolio.imiraihub.com**](https://portfolio.imiraihub.com/)
+📧 **imiraidev007@gmail.com** · 🌐 [**albertcortel.com**](https://albertcortel.com/)
 
 </div>
