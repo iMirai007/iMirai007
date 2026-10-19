@@ -70,7 +70,7 @@ Built at **JJ Global Services**, combining a Blazor WebAssembly frontend with a 
 <!-- combined-profile-stats:start -->
 ### GitHub Analytics
 
-![2,051 lifetime contributions; 74 repositories; 70 private repositories](https://github.com/iMirai007/iMirai007/raw/a4eb668100b93ddaf08b042f5102e099845741b9/assets/combined-stats.svg)
+![2,051 lifetime contributions; 74 repositories; 70 private repositories](assets/combined-stats.svg?v=20261019085310)
 
 **1,403 contributions** in the last 365 days.
 <!-- combined-profile-stats:end -->
