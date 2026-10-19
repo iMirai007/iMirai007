@@ -69,7 +69,7 @@ def render_markdown(stats: CombinedStats) -> str:
     lines: list[str] = [
         "### GitHub Analytics", "",
         f"![{stats.lifetime:,} lifetime contributions; {stats.repositories:,} repositories; "
-        f"{stats.private_repositories:,} private repositories](assets/combined-stats.svg)", "",
+        f"{stats.private_repositories:,} private repositories](assets/combined-stats.svg?v={stats.updated:%Y%m%d%H%M%S})", "",
         f"**{stats.contributions:,} contributions** in the last 365 days · Updated {stats.updated:%d %b %Y}.", "",
         "<details>", "<summary>Monthly contributions</summary>", "",
         "| Month | Contributions |", "| --- | ---: |",
