@@ -32,7 +32,7 @@ def render_svg(stats: CombinedStats) -> str:
         "GitHub Analytics",
         f"{stats.lifetime:,} lifetime contributions, including {stats.contributions:,} across {stats.start} through {stats.end}; "
         f"{stats.repositories:,} owned non-fork repositories, including {stats.private_repositories:,} private. "
-        "A text summary and monthly counts are available below this image.", 510)]
+        "Daily contribution activity is shown in the calendar.", 470)]
     parts += ['<text x="32" y="43" font-size="23" font-weight="650">GitHub Analytics</text>',
               '<text x="32" y="71" class="muted">Development activity</text>',
               '<text x="868" y="43" text-anchor="end" class="small">365 completed UTC days</text>']
@@ -60,8 +60,7 @@ def render_svg(stats: CombinedStats) -> str:
         x: int = 180 + index * 92
         parts += [f'<rect x="{x}" y="434" width="11" height="11" rx="2" fill="{COLORS[index]}"/>',
                   f'<text x="{x + 18}" y="445" class="small">{label}</text>']
-    parts += [f'<text x="32" y="477" class="small">{stats.start:%d %b %Y} – {stats.end:%d %b %Y}</text>',
-              f'<text x="32" y="496" class="small">Updated {stats.updated:%d %b %Y} UTC</text>', '</svg>']
+    parts.append('</svg>')
     return "\n".join(parts)
 
 
@@ -70,13 +69,6 @@ def render_markdown(stats: CombinedStats) -> str:
         "### GitHub Analytics", "",
         f"![{stats.lifetime:,} lifetime contributions; {stats.repositories:,} repositories; "
         f"{stats.private_repositories:,} private repositories](assets/combined-stats.svg?v={stats.updated:%Y%m%d%H%M%S})", "",
-        f"**{stats.contributions:,} contributions** in the last 365 days · Updated {stats.updated:%d %b %Y}.", "",
-        "<details>", "<summary>Monthly contributions</summary>", "",
-        "| Month | Contributions |", "| --- | ---: |",
+        f"**{stats.contributions:,} contributions** in the last 365 days.",
     ]
-    months: list[str] = sorted({day.strftime("%Y-%m") for day in stats.daily_contributions})
-    for month in months:
-        count: int = sum(value for day, value in stats.daily_contributions.items() if day.strftime("%Y-%m") == month)
-        lines.append(f"| {month} | {count:,} |")
-    lines += ["", "</details>"]
     return "\n".join(lines)
