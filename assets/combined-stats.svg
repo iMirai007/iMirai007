@@ -5,14 +5,4 @@
 
 <text x="32" y="43" font-size="23" font-weight="650">GitHub Analytics</text>
 <text x="32" y="84" class="muted">Statistics refresh pending.</text>
-</svg><svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-labelledby="title description">
-<title id="title">Combined GitHub activity: setup pending</title><desc id="description">Counts will appear after both account credentials are configured and the first refresh succeeds. No zero or example counts are displayed.</desc>
-<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#f0f6fc}.muted{fill:#a9b7c9;font-size:14px}.label{fill:#a9b7c9;font-size:15px}.number{font-size:38px;font-weight:650}.small{fill:#a9b7c9;font-size:12px}</style>
-<rect x=".5" y=".5" width="899" height="189" rx="16" fill="#0d1117" stroke="#303d50"/>
-
-<text x="32" y="43" font-size="23" font-weight="650">One developer. Two chapters.</text>
-<text x="32" y="72" class="muted">iMirai007 + Artimatrix007</text>
-<rect x="32" y="96" width="836" height="63" rx="9" fill="#151d2a"/>
-<text x="50" y="121" font-size="16">Private activity, shared as aggregate counts.</text>
-<text x="50" y="144" class="muted">Waiting for the first authenticated refresh. Setup instructions are linked below.</text>
 </svg>
