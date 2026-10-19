@@ -132,7 +132,30 @@ Beyond full-stack development, I reverse engineer hardware protocols and build t
 <!-- combined-profile-stats:start -->
 ### GitHub Analytics
 
-![GitHub Analytics](assets/combined-stats.svg?v=2)
+![2,051 lifetime contributions; 74 repositories; 70 private repositories](assets/combined-stats.svg?v=20261019083259)
+
+**1,403 contributions** in the last 365 days · Updated 19 Oct 2026.
+
+<details>
+<summary>Monthly contributions</summary>
+
+| Month | Contributions |
+| --- | ---: |
+| 2025-10 | 9 |
+| 2025-11 | 61 |
+| 2025-12 | 49 |
+| 2026-01 | 5 |
+| 2026-02 | 6 |
+| 2026-03 | 235 |
+| 2026-04 | 185 |
+| 2026-05 | 184 |
+| 2026-06 | 505 |
+| 2026-07 | 42 |
+| 2026-08 | 11 |
+| 2026-09 | 60 |
+| 2026-10 | 51 |
+
+</details>
 <!-- combined-profile-stats:end -->
 
 ---
