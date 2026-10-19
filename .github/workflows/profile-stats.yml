@@ -1,0 +1,65 @@
+name: Combined profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * *'
+  pull_request:
+    paths:
+      - 'profile_stats*.py'
+      - 'test_profile_stats.py'
+      - '.github/workflows/profile-stats.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'profile_stats*.py'
+      - 'test_profile_stats.py'
+      - '.github/workflows/profile-stats.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: combined-profile-stats-${{ github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Test aggregation and public output
+        run: python3 -m unittest -v test_profile_stats
+
+  refresh:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+      - name: Collect approved aggregates for both accounts
+        env:
+          PROFILE_TOKEN_IMIRAI: ${{ secrets.PROFILE_TOKEN_IMIRAI }}
+          PROFILE_TOKEN_ARTIMATRIX: ${{ secrets.PROFILE_TOKEN_ARTIMATRIX }}
+        run: python3 profile_stats.py
+      - name: Publish only the summary and image
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- README.md assets/combined-stats.svg
+          if git diff --cached --quiet; then
+            echo "Aggregate statistics are unchanged."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh combined profile statistics'
+          git push origin HEAD:main
