@@ -132,7 +132,7 @@ Beyond full-stack development, I reverse engineer hardware protocols and build t
 <!-- combined-profile-stats:start -->
 ### GitHub Analytics
 
-![GitHub Analytics](assets/combined-stats.svg)
+![GitHub Analytics](assets/combined-stats.svg?v=2)
 <!-- combined-profile-stats:end -->
 
 ---
