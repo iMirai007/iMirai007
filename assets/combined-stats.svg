@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="510" viewBox="0 0 900 510" role="img" aria-labelledby="title description">
-<title id="title">GitHub Analytics</title><desc id="description">2,051 lifetime contributions, including 1,403 across 2025-10-19 through 2026-10-18; 74 owned non-fork repositories, including 70 private. A text summary and monthly counts are available below this image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-labelledby="title description">
+<title id="title">GitHub Analytics</title><desc id="description">2,051 lifetime contributions, including 1,403 across 2025-10-19 through 2026-10-18; 74 owned non-fork repositories, including 70 private. Daily contribution activity is shown in the calendar.</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#f0f6fc}.muted{fill:#a9b7c9;font-size:14px}.label{fill:#a9b7c9;font-size:15px}.number{font-size:38px;font-weight:650}.small{fill:#a9b7c9;font-size:12px}</style>
-<rect x=".5" y=".5" width="899" height="509" rx="16" fill="#0d1117" stroke="#303d50"/>
+<rect x=".5" y=".5" width="899" height="469" rx="16" fill="#0d1117" stroke="#303d50"/>
 
 <text x="32" y="43" font-size="23" font-weight="650">GitHub Analytics</text>
 <text x="32" y="71" class="muted">Development activity</text>
@@ -408,6 +408,4 @@
 <text x="474" y="445" class="small">8–15</text>
 <rect x="548" y="434" width="11" height="11" rx="2" fill="#39d353"/>
 <text x="566" y="445" class="small">16+</text>
-<text x="32" y="477" class="small">19 Oct 2025 – 18 Oct 2026</text>
-<text x="32" y="496" class="small">Updated 19 Oct 2026 UTC</text>
 </svg>
