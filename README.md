@@ -132,11 +132,7 @@ Beyond full-stack development, I reverse engineer hardware protocols and build t
 <!-- combined-profile-stats:start -->
 ### GitHub Analytics
 
-[![Combined GitHub analytics: first refresh pending](assets/combined-stats.svg)](PROFILE_STATS.md)
-
-Contribution history across **[iMirai007](https://github.com/iMirai007)** and **[Artimatrix007](https://github.com/Artimatrix007)**, including private activity. Lifetime contributions, owned/private repository counts, and a combined contribution calendar refresh from GitHub. Repository names and source code remain private.
-
-The first authenticated refresh is pending. [View metric definitions and setup](PROFILE_STATS.md).
+![GitHub Analytics](assets/combined-stats.svg)
 <!-- combined-profile-stats:end -->
 
 ---
