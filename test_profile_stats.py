@@ -117,12 +117,14 @@ class ProfileStatsTests(unittest.TestCase):
         self.assertIn(f"{stats.contributions:,} contributions", render_markdown(stats))
         self.assertIn("2025-10-19", svg)
         self.assertIn("2026-10-18", svg)
-        self.assertIn("not a deduplicated count", render_markdown(stats))
+        for output in (svg, render_markdown(stats), render_placeholder()):
+            for private_detail in ("Artimatrix007", "iMirai007", "Two chapters", "two accounts", "Account breakdown", "PROFILE_TOKEN", "PROFILE_STATS.md"):
+                self.assertNotIn(private_detail, output)
 
     def test_placeholder_is_truthful_and_valid_svg(self) -> None:
         svg: str = render_placeholder()
         ET.fromstring(svg)
-        self.assertIn("Waiting for the first authenticated refresh", svg)
+        self.assertIn("Statistics refresh pending", svg)
         self.assertNotIn("SAMPLE", svg)
         self.assertNotIn("0 contributions", svg)
 
